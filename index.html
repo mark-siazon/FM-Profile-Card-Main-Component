@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Frontend Mentor | Profile Card Component</title>
 </head>
-<body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+<body class="page">
+  <main class="container">
+    <article class="profile-card">
+      <img class="profile-card__bg-image" src="assets/bg-pattern-card.svg" alt="Background Pattern">
 
-  803K
-  Likes
+      <div class="profile-card__content">
+        <img class="profile-card__avatar" src="assets/image-victor.jpg" alt="Victor Crest">
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <h2 class="profile-card__name">Victor Crest <span class="profile-card__age">26</span></h2>
+        <p class="profile-card__location">London</p>
+
+        <footer class="profile-card__footer">
+          <div class="profile-card__stats">
+            <p class="profile-card__stats-number">80K</p>
+            <p class="profile-card__stats-label">Followers</p>
+          </div>
+          <div class="profile-card__stats">
+            <p class="profile-card__stats-number">803K</p>
+            <p class="profile-card__stats-label">Likes</p>
+          </div>
+          <div class="profile-card__stats">
+            <p class="profile-card__stats-number">1.4K</p>
+            <p class="profile-card__stats-label">Photos</p>
+          </div>
+        </footer>
+      </div>
+    </article>
+  </main>
 </body>
+
 </html>
